@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json());
 app.use(cors({origin : "*"}))
 
-mongoose.connect("mongodb+srv://srikanth:srikanth@cluster0.jsmfma8.mongodb.net/?retryWrites=true&w=majority").then(
+mongoose.connect("mongodb+srv://username:password@cluster0.jsmfma8.mongodb.net/?retryWrites=true&w=majority").then(
     () => console.log("DB Connnceted"))
 
 app.get("/", (req, res) => {
